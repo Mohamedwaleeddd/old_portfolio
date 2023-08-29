@@ -48,7 +48,7 @@ nav img{
 a{
   color: #fff;
 }
-a:hover{
+.menu a:hover{
   margin-right:  30px
 }
 li{
@@ -413,7 +413,7 @@ button{
 .icons{
   align-items: center;
   display: flex;
-  margin-left: 50px;
+  margin-left: 68px;
   padding: 10px;
 }
 .icons svg{
@@ -434,4 +434,11 @@ button{
   width: 30px;
   border-radius: 100px;
   background: whitesmoke;
+}
+.card button:hover{
+  transform: none;
+  background: #004;
+}
+.card button{
+  border-radius: 2px;
 }
