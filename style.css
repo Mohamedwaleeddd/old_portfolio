@@ -161,6 +161,7 @@ html{
   margin-left: 50px;
 }
 .info{
+  position:  relative;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -169,10 +170,11 @@ html{
   border: 1px whitesmoke solid;
   backdrop-filter: blur(20px);
   border-radius: 2px;
-  width: 350px;
+  width: 90%;
   box-shadow: 3px 1px 5px lightgray;
 }
 .about img{
+  width: 300px;
   border-radius: 5px;
 }
 .about-container{
