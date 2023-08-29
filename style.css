@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+* {
+  font-family: 'REM', sans-serif;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  transition: 0.50s;
+  font-weight: 100;
+}
+
+.line{
+  border-bottom:4px #222 solid;
+  width:27px;
+  margin-top: 5px;
+  border-radius:1px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background: ghostwhite;
+}
+nav img{
+  right: 10px;
+  position: absolute;
+  width: 50px;
+  background: #003;
+  padding-right: 7px;
+  padding: 2px;
+  border-radius: 2px;
+}
+#show{
+  position: absolute;
+  left: 20px;
+}
+.menu{
+  top: -100%;
+  position: fixed;
+  z-index: 9999;
+  height: 420px;
+  background: #002;
+  left: 0;
+  color: #fff;
+  width:100%;
+}
+a{
+  color: #fff;
+}
+a:hover{
+  margin-right:  30px
+}
+li{
+  list-style: none;
+  padding: 15px;
+  background: #0001;
+}
+li:hover{
+  margin-right:  30px;
+  width: 100%;
+}
+.menu h1{
+  margin-left: 10px;
+}
+.menu h1:hover{
+  color: red;
+}
+span{
+  color: #004;
+}
+@media (max-width:1440px){
+  header{
+    color: #222;
+    display: flex !important;
+  }
+ header a{
+    color: #222 !important;
+  }
+  nav{
+    display: none;
+  }
+  .about{
+    display: flex;
+  }
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+}
+@media (max-width:900px){
+  header{
+    display: none !important;
+  }
+  nav{
+    display: flex !important;
+  }
+  .about{
+    display: block !important;
+  }
+  .landing a{
+    color: #fff !important;
+  }
+  .landing ul{
+    margin-left: 10%;
+  }
+  .skills{
+    display: block !important;
+  }
+}
+
+.landing{
+  place-items: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.landing img{
+  width: 400px;
+}
+.landing button{
+  background-color: #4324cf;
+  background-image: linear-gradient(to bottom right,#002, #004);
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 10px;
+  height: 35px;
+}
+
+button:hover {
+  color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+.about {
+  align-items: center;
+  left: -100%;
+  border-radius: 5px;
+  display: flex;
+  border: 1px ghostwhite solid;
+  background: ghostwhite;
+  justify-content: space-around;
+  margin-top: 12px;
+  position: relative;
+  padding: 20px;
+}
+.about h4{
+  margin-left: 50px;
+}
+.info{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.info h3{
+  padding: 15px;
+  border: 1px whitesmoke solid;
+  backdrop-filter: blur(20px);
+  border-radius: 2px;
+  width: 350px;
+  box-shadow: 3px 1px 5px lightgray;
+}
+.about img{
+  border-radius: 5px;
+}
+.about-container{
+  padding-bottom: 50px;
+  left: -100%;
+  background: ghostwhite;
+}
+.bar{
+  width: 300px;
+  height: 20px;
+  border-radius: 1px;
+  background: whitesmoke;
+  border: 2px #004 solid;
+  border-radius: 2px;
+  display: grid;
+  color: #fff;
+  font-size:15px;
+  margin-top: 20px;
+  text-align: left;
+  position: relative;
+}
+.bg{
+  display: flex;
+  background: #004;
+  height: 20px;
+  width: 290px;
+  position: absolute;
+  left: 0;
+  border-radius: 0px;
+}
+#bg h4{
+  margin-left: 10px;
+  margin-top: 2px
+}
+#bg span{
+  color: #fff;
+  margin-left: 150px;
+  position: absolute;
+}
+#bg h5{
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.bg2{
+  display: flex;
+  background: #004;
+  height: 20px;
+  width: 275px;
+  position: absolute;
+  left: 0;
+  border-radius: 0px;
+}
+.bg3{
+  display: flex;
+  background: #004;
+  height: 20px;
+  width: 265px;
+  position: absolute;
+  left: 0;
+  border-radius: 0px;
+}
+.skills{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.skills-cont{
+   background: ghostwhite;
+   opacity: 0;
+   border: 10px white solid;
+}
+/* { ====== Projects ====== }*/
+.mySlides {
+  
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+button{
+  width: 80px;
+  background: none;
+  margin-top: 10px;
+  border: 2px solid #004;
+  color: #004;
+  height: 25px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+ cursor: pointer;
+ height: 15px;
+ width: 15px;
+ transition: 
+ background-color 0.6s ease;
+ font-size:15px;
+ margin-left:100px;
+ color: #004;
+}
+.active, .dot:hover {
+      background-color: #717171;
+  }
+  
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+  .dot{
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px  #004 solid;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:  #004;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {
+    font-size: 11px
+  }
+}
+.prev{
+  margin-left: 10px;
+  font-size:16px;
+  color: #004;
+}
+.card{
+  background: ghostwhite;
+  height: 300px;
+  border-radius: 3px;
+  width: 250px;
+}
+.card img{
+  width: 200px;
+}
+#arrow-up {
+  display: none;
+  position: absolute;
+  width: 50px;
+  bottom: 20px;
+  right: 50px;
+  z-index: 99999999;
+  color: white;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 1500px;
+  transform: rotate(450deg);
+  height: 50px;
+  font-weight: bold;
+  animation: kia 1s ease-in infinite normal;
+  font-size: 20px;
+  border: 2px  #004 solid;
+  backdrop-filter: blur(50px);
+  color: #004;
+}
+#arr{
+  color: #004;
+}
+#arrow-up:hover {
+  border: 1px solid #004;
+  background: #004;
+  color: #fff;
+}
+#arr:hover{
+  color: #fff;
+}
+.hover-underline-animation {
+  position: relative;
+  color: #fff;
+  padding: 10px;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  fill: #004;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: #002;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  background: #114;
+  color: #fff;
+  transform-origin: bottom left;
+}
+.icons{
+  align-items: center;
+  display: flex;
+  margin-left: 50px;
+  padding: 10px;
+}
+.icons svg{
+  fill: #004;
+  margin-left: 10px;
+}
+.prev:hover{
+  padding: 10px;
+  padding-top: 10px;
+  width: 30px;
+  border-radius: 1000px;
+  background: whitesmoke;
+}
+.next:hover{
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  width: 30px;
+  border-radius: 100px;
+  background: whitesmoke;
+}
