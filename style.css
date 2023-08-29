@@ -124,11 +124,13 @@ header{
   width: 400px;
 }
 .landing button{
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: #4324cf;
   background-image: linear-gradient(to bottom right,#002, #004);
   border: none;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 5px;
   width: 100px;
   cursor: pointer;
   font-size: 14px;
