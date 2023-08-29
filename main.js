@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
   }
 });
 window.addEventListener("scroll", () => {
-  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 1320) {
+  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 800) {
     document.querySelector('.skills-cont').style.opacity = "1";
   }else{
    document.querySelector('.skills-cont').style.opacity = "0";
